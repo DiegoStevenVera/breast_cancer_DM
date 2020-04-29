@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Breast cancer</a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">
+                  <span data-feather="home"></span>
+                  Dashboard
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="./diagnostico_completo.html">
+                  <span data-feather="file">(current)</span>
+                  Diagnostico Completo<span class="sr-only"></span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./diagnostico_simplificado.html">
+                  <span data-feather="file"></span>
+                  Diagnostico Simplificado
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="row">
+              <h1>Diagnóstico de cáncer de mama con variables completas</h1>
+          </div>
+
+
+          <div class="container">
+
+            <div class="row">
+              <div class="col-sm">
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button">Radius</button>
+                  </div>
+                  <input type="text" class="form-control"  id="Radius" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button">Texture</button>
+                  </div>
+                  <input type="text" class="form-control"  id="Texture" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" >Perimeter</button>
+                  </div>
+                  <input type="text" class="form-control" id="Perimeter" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button">Area</button>
+                  </div>
+                  <input type="text" class="form-control" id="Area" placeholder="" >
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" >Smoothness</button>
+                  </div>
+                  <input type="text" class="form-control" placeholder=""  id="Smoothness" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+
+              </div>
+              <div class="col-sm">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" >Compactness</button>
+                  </div>
+                  <input type="text" class="form-control" id="Compactness" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" >Concavity</button>
+                  </div>
+                  <input type="text" class="form-control" id="Concavity" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" >Concave points</button>
+                  </div>
+                  <input type="text" class="form-control" id="Concave_points" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button">Symmetry</button>
+                  </div>
+                  <input type="text" class="form-control" id="Symmetry" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" >Fractal dimension</button>
+                  </div>
+                  <input type="text" class="form-control" id="Fractal_dimension" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="container row">
+
+              <div class="col sm">
+                <button type="button" class="btn btn-outline-primary" onclick="diagnosis()">Realizar diagnóstico</button>
+              </div>
+
+              <div class="col sm">
+                <h2 id="diagnostico"></h2>
+              </div>
+
+
+
+            </div>
+
+
+
+          </div>
+
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <!-- https://www.youtube.com/watch?v=uSEd1_FhMWE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+    <script>
+
+    function diagnosis(){
+      var area = parseFloat(document.getElementById("Area").value);
+      var radius = parseFloat(document.getElementById("Radius").value);
+      var texture = parseFloat(document.getElementById("Texture").value);
+      var perimeter = parseFloat(document.getElementById("Perimeter").value);
+      var smoothness = parseFloat(document.getElementById("Smoothness").value);
+      var compactness = parseFloat(document.getElementById("Compactness").value);
+      var concave_points = parseFloat(document.getElementById("Concave_points").value);
+      var symmetry = parseFloat(document.getElementById("Symmetry").value);
+      var concavity = parseFloat(document.getElementById("Concavity").value);
+      var fractal_dimension = parseFloat(document.getElementById("Fractal_dimension").value);
+
+      var value = 7.36 + 2.05*radius- 0.38*texture + 0.07*perimeter -0.04*area - 76.43*smoothness + 1.46*compactness-8.47*concavity - 66.82*concave_points - 16.28*symmetry + 68.38*fractal_dimension;
+      var e = 2.718281828459;
+      var prediction = 1/(1+Math.pow(e,-1*value));
+
+      console.log(prediction);
+
+      var text_result = document.getElementById("diagnostico");
+      if (prediction >= 0.5) {
+        text_result.innerHTML = "Tumor Benigno";
+        text_result.style.color = "#10CF10";
+      } else {
+        text_result.innerHTML = "Tumor Maligno";
+        text_result.style.color = "#E91A1A";
+      }
+        if (isNaN(value)) {text_result.innerHTML='Revisar los datos introducidos'}
+    }
+
+
+    </script>
+
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
